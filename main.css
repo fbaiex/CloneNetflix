@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header .logo:hover {
+    color: #a30911;
+}
+
+/* Filme principal*/
+
+.filmeprincipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('imagens/marcopollo.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.botao:hover {
+    border: 2px solid grey;
+    background-color: white;
+    color: black;
+}
+
+.filmeprincipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.filmeprincipal .titulo {
+    margin-top: 20%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filmeprincipal .container {
+    width: 60%;
+}
+
+.boxfilm {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
